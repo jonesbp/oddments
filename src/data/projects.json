@@ -2,11 +2,11 @@
   {
     "title": "Vera Memphis",
     "linkType": "external",
-    "linkTarget": "",
+    "linkTarget": "https://vera-memphis-glitch.me",
     "date": "2019-01-20",
-    "image": "",
-    "imageAlt": "",
-    "blurb": ""
+    "image": "vera.png",
+    "imageAlt": "Example screenshot",
+    "blurb": "Randomly generated Vera Molnár and Memphis mashups on [Glitch](https://vera-memphis.glitch.me) inspired by a Tim Holman [tutorial](https://generativeartistry.com/tutorials/un-deux-trois/) at Generative Artistry."
   },
   {
     "title": "Local Memory: A History of Music in Austin",
