@@ -1,0 +1,102 @@
+.homepage-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homepage-grid__cell {
+  padding: 2px;
+  position: relative;
+  width: 33.33333%;
+}
+
+.homepage-grid__cell__contents {
+  background-color: white;
+  border: 1px solid #eee;
+  height: 100%;
+  padding: 1rem;
+  width: 100%;
+
+  h3 a {
+    background-image: linear-gradient(to right, rgba(#fff, 1.0),rgba(#fff, 0));
+    border: {
+      color: #000;
+      style: solid;
+      width: 0 0 2px 0;
+    }
+    color: #000;
+    display: inline-block;
+    padding: calc(.25em + 2px) .5em .25em 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      background-image: linear-gradient(to right, white, white);
+    }
+  }
+
+  p a {
+    background-color: rgba(#fff, .5);
+    color: #000;
+    font-weight: 700;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.homepage-grid__cell {
+  &:nth-child(7n) .homepage-grid__cell__contents {
+    background-color: hsla(0, 80%, 95%, .8);
+    border-color: hsl(0, 80%, 80%);
+  }
+
+  &:nth-child(7n + 1) .homepage-grid__cell__contents {
+    background-color: hsla(50, 80%, 95%, .8);
+    border-color: hsl(50, 80%, 80%);
+  }
+
+  &:nth-child(7n + 2) .homepage-grid__cell__contents {
+    background-color: hsla(100, 80%, 95%, .8);
+    border-color: hsl(100, 80%, 80%);
+  }
+
+  &:nth-child(7n + 3) .homepage-grid__cell__contents {
+    background-color: hsla(150, 80%, 95%, .8);
+    border-color: hsl(150, 80%, 80%);
+  }
+
+  &:nth-child(7n + 4) .homepage-grid__cell__contents {
+    background-color: hsla(200, 80%, 95%, .8);
+    border-color: hsl(200, 80%, 80%);
+  }
+
+  &:nth-child(7n + 5) .homepage-grid__cell__contents {
+    background-color: hsla(250, 80%, 95%, .8);
+    border-color: hsl(250, 80%, 80%);
+  }
+
+  &:nth-child(7n + 6) .homepage-grid__cell__contents {
+    background-color: hsla(300, 80%, 95%, .8);
+    border-color: hsl(300, 80%, 80%);
+  }
+}
+
+.homepage-grid__cell {
+  &:first-child .homepage-grid__cell__contents {
+    background-color: #fff;
+    border-color: #eee;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .homepage-grid__cell {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .homepage-grid__cell {
+    width: 100%;
+  }
+}

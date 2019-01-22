@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+  font: {
+    family: 'Work Sans', sans-serif;
+    size: 16px;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: {
+    image: url('/static/images/background.png');
+    size: 350px 350px;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font: {
+    family: 'Josefin Sans', sans-serif;
+    weight: 700;
+  }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
