@@ -4,7 +4,7 @@
     "linkType": "external",
     "linkTarget": "https://vera-memphis-glitch.me",
     "date": "2019-01-20",
-    "image": "vera.png",
+    "image": "content/vera.png",
     "imageAlt": "Example screenshot",
     "blurb": "Randomly generated Vera Molnár and Memphis mashups on [Glitch](https://vera-memphis.glitch.me) inspired by a Tim Holman [tutorial](https://generativeartistry.com/tutorials/un-deux-trois/) at Generative Artistry."
   },
@@ -22,7 +22,7 @@
     "linkType": "external",
     "linkTarget": "http://gentse-deuren.brianjon.es",
     "date": "2018-12-04",
-    "image": "PC071506-small.jpg",
+    "image": "content/PC071506-small.jpg",
     "imageAlt": "Kapper Muzaffer",
     "blurb": "I’m taking photos of (mostly) storefronts most days during the year we’re living in Gent. Playing with Gatsby and React."
   },
@@ -31,7 +31,7 @@
     "linkType": "external",
     "linkTarget": "https://islands-division.glitch.me",
     "date": "2018-09-23",
-    "image": "f5d45715ae.jpg",
+    "image": "content/f5d45715ae.jpg",
     "imageAlt": "Example screenshot",
     "blurb": "Small island mirage animations on [Glitch](https://islands-division.glitch.me) inspired by a Tim Holman [tutorial](https://generativeartistry.com/tutorials/joy-division/) at Generative Artistry."
   }

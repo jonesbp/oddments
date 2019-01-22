@@ -6,6 +6,16 @@ import fecha from 'fecha'
 
 import Layout from '../components/layout'
 
+function publicUrlForImage(imgPath, imgFileEdges) {
+  const filteredImages = imgFileEdges.filter(({ node }) => (imgPath === node.relativePath));
+
+  if (filteredImages.length > 0) {
+    return filteredImages[0].node.publicURL;
+  }
+
+  return null;
+}
+
 const IndexPage = ({ data }) => (
   <Layout>
     <div className="homepage-grid">
@@ -29,7 +39,7 @@ const IndexPage = ({ data }) => (
               </h3>
               {(node.image && node.image.length > 0) ? (
                 <a href={node.linkTarget}>
-                  <img src={`/static/images/content/${node.image}`} alt={node.imageAlt} />
+                  <img src={publicUrlForImage(node.image, data.allFile.edges)} alt={node.imageAlt} />
                 </a>
               ) : null}
               <div dangerouslySetInnerHTML={{__html: marked(node.blurb)}} />
@@ -54,6 +64,14 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allFile(filter: { extension: {in: ["jpg", "png"] }}) {
+      edges {
+        node {
+          publicURL
+          relativePath
+        }
       }
     }
     allProjectsJson(sort: {fields:date, order:DESC}) {
