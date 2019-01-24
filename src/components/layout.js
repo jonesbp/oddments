@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import FooterScripts from './footer-scripts'
+
 import 'normalize.css';
 import './styles.scss'
 
@@ -30,6 +32,8 @@ const Layout = ({ children }) => (
           <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Work+Sans" rel="stylesheet" /> 
         </Helmet>
         {children}
+
+        <FooterScripts />
       </>
     )}
   />
